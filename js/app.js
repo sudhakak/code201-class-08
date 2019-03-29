@@ -11,7 +11,8 @@ function LocationsData(name,
   maximumPerCustomer,
   averagePerCustomer,
   avgCookies,
-  totalCookies) {
+  totalCookies
+) {
   this.name = name;
   this.minimumPerCustomer = minimumPerCustomer;
   this.maximumPerCustomer = maximumPerCustomer;
@@ -78,6 +79,7 @@ function consoleLogs(totalCookies,locationName,averageCookies,minCookiesCustomer
   console.log('Total Cookies count :' + totalCookies);
   console.log('    ');
 }
+
 
 var table = document.getElementById('shell');
 
@@ -157,6 +159,7 @@ function renderSalesData(tableRow) {
 makeHeaderRow();
 render(data);
 renderSalesData(locationsData);
+
 
 function showAboutUs() {
   document.getElementById('specials').style.display='none';
